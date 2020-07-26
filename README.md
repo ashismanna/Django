@@ -13,3 +13,7 @@ pip install django
 4)start server
 ==================
 python manage.py runserver
+
+5)Open browser
+===================
+ localhost:8000 
