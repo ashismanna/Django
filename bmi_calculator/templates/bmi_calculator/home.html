@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator</title>
+</head>
+<body>
+	<h1>BMI calculator App created by DJango</h1>
+	<ul>
+		<li>Enter Height in meters</li>
+		<li>Enter weight in Kg</li>
+	</ul>
+	<br>
+	<form action = "/calculate_bmi" method = "post"> 
+	    {% csrf_token %} 
+	    {{form }} 
+	    <input type="submit" value=Submit> 
+	</form> 
+
+</body>
+</html>
