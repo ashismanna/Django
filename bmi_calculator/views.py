@@ -8,7 +8,6 @@ def home(request):
 	return render(request,'bmi_calculator/home.html',context)
 
 def calculate_bmi(request):
-	print ("Herfe")
 	if request.POST:
 	    height = float(request.POST.get('height'))
 	    weight = float(request.POST.get('weight'))
