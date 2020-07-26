@@ -10,7 +10,7 @@
 		<li>Enter weight in Kg</li>
 	</ul>
 	<br>
-	<form action = "/calculate_bmi" method = "post"> 
+	<form action = "{% url 'calculate-bmi' %}" method = "post"> 
 	    {% csrf_token %} 
 	    {{form }} 
 	    <input type="submit" value=Submit> 
